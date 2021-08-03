@@ -1,3 +1,5 @@
+'use strict';
+let counter = 0;
 let userNAme = prompt("what is your name");
 alert("welcome to my page " + userNAme);
 
@@ -8,6 +10,7 @@ console.log(Q1);
 switch (Q1){
     case "YES":
         alert("TRUE");
+        counter++;
         break;
         case "NO":
         alert("False");
@@ -22,6 +25,7 @@ let Q2 = prompt("am i studying in LTUC (ASAC) ?").toUpperCase();
 switch (Q2){
     case "YES":
         alert("TRUE");
+        counter++;
         break;
         case "NO":
         alert("False");
@@ -35,6 +39,7 @@ console.log(Q3);
 switch (Q3){
     case "NO":
         alert("TRUE");
+        counter++;
         break;
         case "YES":
         alert("False");
@@ -47,6 +52,7 @@ let Q4 = prompt("Do i have 15k hour playing Dota ?").toUpperCase();
 switch (Q4){
     case "YES":
         alert("TRUE");
+        counter++;
         break;
         case "NO":
         alert("False");
@@ -59,6 +65,7 @@ let Q5 = prompt("my fav meal is falafel ?").toUpperCase();
 switch (Q5){
     case "NO":
         alert("TRUE");
+        counter++;
         break;
         case "YES":
         alert("False");
@@ -66,16 +73,95 @@ switch (Q5){
         default:
             alert("Wrong answer please answer yes or no")
             break;
-}
-let feedBack = prompt("did you like my page? ").toUpperCase();
-switch (feedBack){
-    case "NO":
-        alert("no one care");
+
+
+ }
+
+
+for (let i = 0; i < 4 ; i++) {
+
+     let Q6 = prompt("gess my favorite number ")
+
+    if (Q6 == 5) {
+
+        alert('correct anwser')
+        counter++;
         break;
-        case "YES":
+    }
+
+    else (Q6 != 5); {
+        alert('encorrect')
+    }
+    console.log(i);
+    if ( i == 3 ){
+        alert("the correct anwser is 5")
+    }
+
+
+}
+
+
+
+let cars = ["tESLA", "VOLVO", "BMW"];
+
+for (let i = 0; i < 6; i++) {
+
+    let Q7 = prompt("gess my favorite care");
+
+
+    for (let j = 0; j < cars.length; j++) {
+
+        
+
+
+        if (Q7 == cars[j]) {
+
+            alert('correct anwser');
+            counter++;
+            i = 6;
+            break;
+        }
+
+        
+    }
+    if(i == 5 ){
+        alert("the correct anwser is tesla , volvo, bmw ");
+    }
+    }
+    
+
+
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let feedBack = prompt("did you like my page? ").toUpperCase();
+switch (feedBack) {
+    case "NO":
+        alert("no one cares about you");
+        break;
+    case "YES":
         alert("thanks ");
         break;
-        default:
-            alert("Wrong answer please answer yes or no")
-            break;
+    default:
+        alert("Wrong answer please answer yes or no")
+        break;
 }
+
+alert('your got ' + counter  + 'of 7 ');
