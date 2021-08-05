@@ -4,7 +4,7 @@ let userNAme = prompt("what is your name");
 alert("welcome to my page " + userNAme);
 
 
-
+function f1(){
 let Q1 = prompt("am i from jordan").toUpperCase();
 console.log(Q1);
 switch (Q1){
@@ -19,6 +19,8 @@ switch (Q1){
             alert("Wrong answer please answer yes or no")
             break;
 }
+}
+f1();
 
 let Q2 = prompt("am i studying in LTUC (ASAC) ?").toUpperCase();
 
